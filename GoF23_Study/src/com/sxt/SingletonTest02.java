@@ -4,6 +4,7 @@ package com.sxt;
  * @author fly
  * @date 2019/6/2
  * 懒汉式
+ * 线程安全，可延时加载，但并发效率较低。
  */
 public class SingletonTest02 {
     //类初始化时，不初始化这个对象（延时加载，真正用的时候再创建)。

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Collection_Study/Collection_Study.iml" filepath="$PROJECT_DIR$/Collection_Study/Collection_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoF23_Study/GoF23_Study.iml" filepath="$PROJECT_DIR$/GoF23_Study/GoF23_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO_Study/IO_Study.iml" filepath="$PROJECT_DIR$/IO_Study/IO_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBC_Study/JDBC_Study.iml" filepath="$PROJECT_DIR$/JDBC_Study/JDBC_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyStudy/MyStudy.iml" filepath="$PROJECT_DIR$/MyStudy/MyStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Net_Study/Net_Study.iml" filepath="$PROJECT_DIR$/Net_Study/Net_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reflection_Study/Reflection_Study.iml" filepath="$PROJECT_DIR$/Reflection_Study/Reflection_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SXT_Study.iml" filepath="$PROJECT_DIR$/SXT_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread_Study/Thread_Study.iml" filepath="$PROJECT_DIR$/Thread_Study/Thread_Study.iml" />
+    </modules>
+  </component>
+</project>

@@ -4,9 +4,13 @@ package com.sxt;
  * @author fly
  * @date 2019/5/31
  */
+@SxtTable("tb_user")
 public class User {
+    @SxtField(columnName = "id",type = "int",length = 10)
     private int id;
+    @SxtField(columnName = "user_age",type = "int",length = 3)
     private int age;
+    @SxtField(columnName = "user_name",type = "varchar",length = 10)
     private String name;
 
     public User() {

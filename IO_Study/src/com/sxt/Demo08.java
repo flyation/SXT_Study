@@ -3,30 +3,30 @@ package com.sxt;
 import java.io.*;
 
 /**
- * 文件字节输出流
+ * 文件字符输出流
  * 流操作步骤:
  * 1.创建源
  * 2.选择流
  * 3.操作
  * 4.释放资源
  * @author fly
- * @date 2019/7/2
+ * @date 2019/7/15
  */
-public class Demo06 {
+public class Demo08 {
     public static void main(String[] args) {
         //1.创建源
-        File f = new File("dest.txt");
+        File dest = new File("tt.txt");
 
         //2.选择流
-        OutputStream os = null;
+        Writer wt = null;
         try {
-            os = new FileOutputStream(f,true);
+            wt = new FileWriter(dest,true);
 
             //3.操作
-            String msg = "\tI/O is not difficult\n";
-            byte[] datas = msg.getBytes();
-            os.write(datas,0,datas.length);
-            os.flush();
+            String msg = "\tI/O is not difficult\n添加中文\n";
+            char[] datas = msg.toCharArray();
+            wt.write(datas);
+            wt.flush();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -34,8 +34,8 @@ public class Demo06 {
         } finally {
             //4.释放
             try {
-                if (os != null) {
-                    os.close();
+                if (wt != null) {
+                    wt.close();
                 }
             } catch (IOException e) {
                 e.printStackTrace();

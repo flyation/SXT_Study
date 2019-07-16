@@ -1,21 +1,18 @@
+package com.sxt;
+
 import java.io.*;
 
 /**
- * 文件中转(文件字节输入输出流)
- * 流操作步骤:
- * 1.创建源
- * 2.选择流
- * 3.操作
- * 4.释放资源
+ * 文件中转(字节缓冲流)BufferedInputStream/BufferedOutputStream
+ * try-with-resourses
  * @author fly
- * @date 2019/7/2
+ * @date 2019/7/16
  */
-public class Test {
+public class MyCopyBufferFile {
     public static void myCopy(String srcPath,String destPath){
-        long ts = System.currentTimeMillis();
         //try-with-resourse,声明放在try的括号内
         try(InputStream is = new BufferedInputStream(new FileInputStream(srcPath));
-                OutputStream os = new BufferedOutputStream(new FileOutputStream(destPath))) {
+            OutputStream os = new BufferedOutputStream(new FileOutputStream(destPath))) {
             byte[] flush = new byte[1024];  //缓冲容器
             int len = -1;                   //接收长度
             while ((len=is.read(flush)) != -1){
@@ -25,8 +22,6 @@ public class Test {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        long te = System.currentTimeMillis();
-        System.out.println(te - ts);
     }
 
     public static void main(String[] args) {

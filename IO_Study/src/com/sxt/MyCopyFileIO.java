@@ -3,7 +3,7 @@ package com.sxt;
 import java.io.*;
 
 /**
- * 文件中转
+ * 文件中转(文件字节输入输出流)
  * 流操作步骤:
  * 1.创建源
  * 2.选择流
@@ -12,7 +12,7 @@ import java.io.*;
  * @author fly
  * @date 2019/7/2
  */
-public class MyCopy {
+public class MyCopyFileIO {
     public static void myCopy(String srcPath,String destPath){
         //1.创建源
         File src = new File(srcPath);
@@ -57,6 +57,6 @@ public class MyCopy {
     }
 
     public static void main(String[] args) {
-        myCopy("SXT_Study.iml","ttt.txt");
+        myCopy("5.png","ttt.png");
     }
 }

@@ -30,6 +30,9 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        myCopy("ccc.mp4","ccc_copy.mp4");
+//        myCopy("ccc.mp4","ccc_copy.mp4");
+        int a = 2;
+        long b = 3;
+        a = (int)b;
     }
 }
